@@ -41,8 +41,64 @@ a:hover {
     width: 100%;
 }
 
+.footer-blog {
+    position: fixed;
+    text-align: center;
+    color: #666;
+    bottom: 0;
+    width: 100%;
+    margin-left: 170px; /* Adjust based on sidebar width */
+    padding: 20px;
+    max-width: calc(100vw - 170px); /* Adjust the width as needed */
+    /* flex-grow: 1; */
+}
+
 .container {
-    max-width: 800px; /* Adjust the width as needed */
+    max-width: calc(100vw - 170px); /* Adjust the width as needed */
     margin: 0 auto; /* Centers the container */
     padding: 20px; /* Adds padding inside the container */
+    margin-left: 180px;;
+} 
+
+.sidebar {
+    width: 150px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+}
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+    text-align: left; /* Align text to the left */
+}
+.sidebar ul li a:hover {
+    background-color: #ccc;
+}
+
+.blog-button{
+    text-align: center;
+}
+.blog-button a{
+    font-size: x-large;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+.blog-button a:hover {
+    background-color: #ccc;
 }
